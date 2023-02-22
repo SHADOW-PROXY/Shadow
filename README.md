@@ -15,6 +15,8 @@ Shadow will allow users to enable a blocklist to block unwanted content, such as
 
 # Getting Started
 To start using Shadow, follow these steps:
-• Clone the repository from GitHub.
+• Clone the repository from GitHub. 
+
 • Navigate to the project directory and run npm i to install the necessary dependencies.
+
 • Run npm start to start the proxy server.
