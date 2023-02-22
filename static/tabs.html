@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SHADOW</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <button onclick="newtab()" class="btn">+</button>
+    <input type="text" id="address" placeholder="Search freely..."></input>
+    <button onclick="load()" class="btn">Load</button>
+  </div>
+  <div class="tab">
+    <div id="tabbtns">
+      <button class="btn active" onclick="openTab(1)" id="tabb1" style="width: 100%;">Welcome<span class="topright2" onclick="closeTab(1)">X</span></button>
+    </div>
+  </div>
+  <div id="tabs">
+    <div id="tab1" class="tabcontent" style="display:block">
+      <iframe src="int/welcome.html" height="100%" width="100%" id="iweb1" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>

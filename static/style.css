@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #222;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #fff;
+  background-color: #222;
+  float: left;
+  position: static;
+  width: 10%;
+}
+
+#tabbtns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#tabs {
+  flex: 1;
+  display: flex;
+}
+
+.tabcontent {
+  flex: 1;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-top: none;
+  height: 100vh;
+}
+
+.btn {
+  background-color: inherit;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  padding: 8px 14px;
+  transition: .3s;
+  font-size: 17px;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.btn.active {
+  background-color: #444;
+}
+
+.topright,
+.topright2 {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-top: none;
+  align-self: flex-end;
+}
+
+.topright:hover {
+  color: #f00;
+}
+
+.topright2:hover {
+  color: #00f;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: #222;
+  color: #fff;
+  transition: box-shadow .3s, border .3s;
+  width: 30%;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+input[type=text].focus,
+input[type=text]:focus {
+  border: 1px solid #fff;
+  box-shadow: 0 0 5px 1px #fff;
+}
+
+

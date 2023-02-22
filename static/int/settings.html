@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Shadow: Settings</title>
+    <style>
+      body {
+        background-color: #000;
+        font-family: Arial, sans-serif;
+        color: #fff;
+      }
+      .container {
+        background-color: #222;
+        border: 1px solid #555;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+      h1 {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 28px;
+        margin-bottom: 10px;
+        display: inline-block;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+      }
+      tr {
+        border-bottom: 1px solid #555;
+      }
+
+      h2 {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 17px;
+        margin-bottom: 10px;
+        display: inline-block;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+      }
+
+      input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 18px;
+  margin: 0;
+  outline: none;
+  position: relative;
+  vertical-align: middle;
+  width: 18px;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+button {
+  background-color: #222;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>SHADOW: SETTINGS</h1>
+      <h2>IMPORTANT NOTE: SETTINGS ARE INCOMPLETE</h2>
+      <form>
+        <table>
+          <tr>
+            <td><label for="js">Disable JavaScript:</label></td>
+            <td><input type="checkbox" id="js" name="js" value="disable"></td>
+          </tr>
+          <tr>
+            <td><label for="dm">Force Dark Mode:</label></td>
+            <td><input type="checkbox" id="dm" name="dm" value="force"></td>
+          </tr>
+          <tr>
+            <td><label for="bl">Enable Blocklist:</label></td>
+            <td><input type="checkbox" id="bl" name="bl" value="enable"></td>
+          </tr>
+          <tr>
+            <td><label for="bc">Block Cookies:</label></td>
+            <td><input type="checkbox" id="bc" name="bc" value="block"></td>
+          </tr>
+          <tr>
+            <td><label for="ca">Clear Cache:</label></td>
+            <td><input type="checkbox" id="ca" name="ca" value="clear"></td>
+          </tr>
+          <tr>
+            <td><label for="st">Secure Traffic:</label></td>
+            <td><input type="checkbox" id="st" name="st" value="secure"></td>
+          </tr>
+        </table>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </body>
+</html>

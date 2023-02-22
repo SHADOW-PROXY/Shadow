@@ -1,0 +1,6 @@
+Ask the user to provide a URL of a valid shadow instance if they want to contribute to the network.
+Take the URL provided by the user.
+Hash the URL.
+Check if the hashed URL matches the expected value.
+If the hashed URL matches, check the URLs instances DATABASE.
+Add the valid instance to a database of valid URLs, along with its database.
