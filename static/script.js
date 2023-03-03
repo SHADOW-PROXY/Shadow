@@ -74,12 +74,8 @@ function load() {
   } else {
     byId('tabb'+currentTab).innerHTML = 'Loading... <span class="topright2" onclick="closeTab(' + currentTab + ')">X</span>';
     if (url !== '') {
-      if (!/^https?:\/\//i.test(url)) {
-        if (/\./.test(url)) {
-          url = 'https://' + url;
-        }
-      }
-      iframe.src = window.location.origin + '/service/' + encodeURIComponent(url);
+      let uri = search(url, 'https://google.com/search?q=%s')
+      iframe.src = window.location.origin + __uv$config.prefix + __uv$config.encodeUrl(uri);
     }
   }
 
@@ -179,4 +175,8 @@ function unencodeSpans() {
       span.innerHTML = newHtml;
     }
   }
+}
+function isUrl() { 
+    if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+    return false;
 }

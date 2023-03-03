@@ -1,20 +1,22 @@
 {
   "dependencies": {
-    "@tomphttp/bare-server-node": "^1.0.2-beta-readme2",
-    "bare-server-node": "github:tomphttp/bare-server-node",
-    "node-static": "^0.7.11"
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.8",
+    "@tomphttp/bare-server-node": "^1.2.5",
+    "express": "^4.18.2"
   },
-  "name": "uv-app",
+  "name": "shadow",
   "version": "1.0.0",
-  "description": "Ultraviolet instance",
+  "description": "Shadow instance",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
   },
   "keywords": [
-    "proxy"
+    "proxy",
+    "shadow"
   ],
-  "author": "",
+  "author": "Shadow",
   "license": "GPL-3.0-or-later"
 }
