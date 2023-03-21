@@ -1,17 +1,9 @@
 # SHADOW
 🚀SHADOW is an advanced, customizable web proxy that enables users to access the internet without restrictions. It is a tool that advocates for free speech, privacy, and transparency. Shadow is built on Node.js and Ultraviolet by Titanium Network, and can be easily customized and configured to meet individual user needs.
 
-# Future Plans
-Shadow aims to bring more customization options for its users with `shadow:settings`. The following settings will be included in the upcoming release:
-
-• Disable JavaScript
-JavaScript is a widely used scripting language on the internet, but it can also pose a security risk. SHADOW will allow users to disable JavaScript to protect their browsing experience.
-
-• Force Dark Mode
-Dark mode is a popular feature in many apps and websites. SHADOW will enable users to force dark mode on all websites for a better viewing experience.
-
-• Enable Blocklist
-SHADOW will allow users to enable a blocklist to block unwanted content, such as ads or malicious websites.
+# Features:
+• Sick Tab System
+• Force Dark Mode Option
 
 # Getting Started
 To start using SHADOW, follow these steps:
