@@ -3,6 +3,7 @@
 
 # Features:
 • Sick Tab System
+
 • Force Dark Mode Option
 
 # Getting Started
