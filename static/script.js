@@ -138,6 +138,10 @@ function load() {
   });
 }
 
+function refresh() {
+  var iframe = document.getElementById('iweb' + currentTab);
+  iframe.contentWindow.location.reload();
+}
 
 
 
@@ -235,3 +239,16 @@ function isUrl() {
 }
 
 
+function shadowSettings() {
+  var url = "int/settings.html";
+  var iframe = byId('iweb' + currentTab);
+  iframe.src = url;
+  iframe.addEventListener('load', function() {
+    const iframeWindow = iframe.contentWindow;
+    var title = iframe.contentDocument.title || "Welcome";
+    byId('tabb'+currentTab).innerHTML = title + ' <span class="topright2" onclick="closeTab(' + currentTab + ')">X</span>';
+    var functionCode = darkMode.toString();
+    // Execute the code in the iframe's context
+    iframeWindow.eval("(" + functionCode + ")()");
+  });
+}

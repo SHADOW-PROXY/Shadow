@@ -9,7 +9,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #222;
+  background-color: #000;
+  border-bottom: 1px solid white;
 }
 
 .tab {
@@ -53,6 +54,7 @@ body {
   transition: .3s;
   font-size: 17px;
   color: #fff;
+  align-self: flex-start; /* added to align the button to the left */
 }
 
 .btn:hover {
@@ -90,12 +92,14 @@ body {
 input[type=text] {
   padding: 10px;
   border: 1px solid #fff;
-  background-color: #222;
+  background-color: #000;
   color: #fff;
   transition: box-shadow .3s, border .3s;
-  width: 30%;
+  width: 60%;
   border-radius: 5px;
   font-family: Arial, sans-serif;
+  margin: 0 auto; /* added to center the input form */
+  display: block; /* added to make the input form a block element */
 }
 
 input[type=text].focus,
@@ -105,3 +109,32 @@ input[type=text]:focus {
 }
 
 
+.refreshbtn {
+  background-color: inherit;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  padding: 8px 14px;
+  transition: .3s;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  align-self: flex-start; /* added to align the button to the left */
+}
+
+.settingsbtn {
+  background-color: inherit;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  padding: 8px 14px;
+  transition: .3s;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  align-self: flex-start; /* added to align the button to the left */
+}
+
+.refreshsvg {
+  margin-bottom: 10px;
+}
